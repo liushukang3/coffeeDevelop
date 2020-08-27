@@ -1,0 +1,95 @@
+.Collection{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eeeeee66;
+    .Collection-nav{
+        .van-nav-bar{
+            background-color: rgba(255, 255, 255, 0.9);
+            .van-nav-bar__left>*{
+                
+                color: @mainColor;
+            }
+            .van-nav-bar__title{
+                color: #999;
+            }
+
+        }
+    }
+    .right-list{
+        // background-color: rosybrown;
+        height: calc(~"100% - 50px");
+        flex: 1;
+        padding: 10px;
+        padding-top: 15px;
+        overflow-y: auto;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            .list-item-box{
+                &.last-list-item{
+                    margin-right: auto;
+                    margin-left: 6px;
+                }
+                width: 45%;
+                text-align: center;
+                border-radius: 8px;
+                background-color: rgba(255,255,255,0.6);
+                margin-bottom: 16px;
+                position: relative;
+                .img-box {
+                    padding: 12px;
+                    text-align: center;
+                    span{
+                        width: 86px;
+                        height: 86px;
+                        display: block;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        box-shadow: 0 0 2px 1px rgba(255,255,255,0.5) inset;
+                    }
+                }
+                .list-item-titleCn{
+                    font-size: 14px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 15px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    // color: #333;
+                }
+                .list-item-titleEn{
+                    line-height: 20px;
+                    padding:0  16px; 
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-style: italic;
+                    font-family: Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei',sans-serif;
+                }
+                .list-item-price{
+                    font-size: 18px;
+                    font-weight: 600;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 8px;
+                    color: @mainColor;
+
+                }
+                .closeIcon{
+                    position: absolute;
+                    right: -6px;
+                    top: -6px;
+                    .van-icon{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.SafeCenter{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #eeeeee66;
+    .SafeCenter-nav{
+        .van-nav-bar{
+            background-color: rgba(255, 255, 255, 0.9);
+            .van-nav-bar__left>*{
+                
+                color: @mainColor;
+            }
+            .van-nav-bar__title{
+                color: #999;
+            }
+            .van-nav-bar__text {
+                color: @mainColor;
+            }
+        }
+    }
+    .van-button--info {
+        color: #fff;
+        background-color: @mainColor;
+        border: 0.02667rem solid @mainColor;
+    }
+}

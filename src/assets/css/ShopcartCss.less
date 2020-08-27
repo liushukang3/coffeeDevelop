@@ -1,0 +1,118 @@
+.shopcart{
+    padding-bottom: 100px;
+    .list{
+      background-color: #eeeeee55;
+      overflow-y: auto;
+      height: 527px;
+
+    }
+    .list-item{
+      padding: 10px;background-color: #fff;
+    }
+    .checkbox-item{
+      width: 20px;
+      height: 20px;
+      margin-top: 30px;
+    }
+    .list-items:not(:last-child){
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .list-items:last-child{
+        margin-bottom: 20px;
+    }
+     .list-items .van-button{
+      height: 100%;
+    }
+  
+    .product-info{
+      width: calc(~"100% - 30px");
+      margin-left: 10px;
+    }
+  
+    .product-img{
+      width: 80px;
+      height: 80px;
+    }
+    .product-content{
+      width: calc(~"100% - 90px");
+      height: 80px;
+      margin-left: 10px;
+    }
+    .product-title{
+      margin-right: 10px;
+      font-size: 16px;
+      color: #444;
+    }
+    .product-rule{
+      font-size: 12px;
+      color: #666;
+      line-height: 24px;
+    }
+    .product-enname{
+      font-size: 10px;
+      color: #666;
+      height: 20px;
+    }
+    .product-name{
+      height: 30px;
+    }
+    .product-text{
+      height: 50px;
+    }
+    .product-price{
+      height: 30px;
+    }
+    .price{
+      color: @mainColor;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+     .van-stepper__minus{
+      color: @mainColor;
+      border-color: @mainColor;
+    }
+  
+     .van-stepper__plus{
+      background-color: @mainColor;
+    }
+    .product-count{
+      margin-top: 4px;
+    }
+  
+     .submit-bar{
+      bottom: 50px;
+    }
+  
+     .van-submit-bar__price{
+      color: @mainColor;
+    }
+  
+     .submit-bar-delete .van-button{
+      margin-left: auto;
+    }
+    .van-nav-bar__text {
+        color: @mainColor;
+    }
+    .van-checkbox__icon--checked .van-icon {
+        color: #fff;
+        background-color: @mainColor;
+        border-color: @mainColor;
+    }
+    .van-button--info {
+        color: #fff;
+        background-color: @mainColor;
+        border: 0.02667rem solid @mainColor;
+    }
+    .product-enname{
+        font-style: italic;
+    }
+    .cartEmpty{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
+    }
+  }

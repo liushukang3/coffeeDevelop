@@ -1,0 +1,200 @@
+.Detail{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    // margin-top: 46px;
+    // margin-bottom: 51px;
+    // overflow-y: scroll;
+    // overflow: hidden;
+    background-color: #eeeeee;
+    .detail-nav{
+        .van-nav-bar{
+            background-color: rgba(255, 255, 255, 0.9);
+            .van-nav-bar__left>*{
+                
+                color: @mainColor;
+            }
+            .van-nav-bar__title{
+                color: #999;
+            }
+
+        }
+    }
+    .detail-bigbox{
+        height: calc(~"100% - 98px");
+        // background-color: rgb(64, 187, 181);
+        overflow: hidden;
+        // position: relative;
+        // overflow-y: auto;
+        .detail-body{
+            font-size: 16px;
+            color: #3c3c3c;
+            padding-top: 2px;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            .detail-img img {
+                height: 280px;
+            }
+            .detail-body-box{
+                padding:0 10px;
+                // min-height: 400px;
+            }
+            .detail-title{
+                margin-top: 16px;
+                height: 56px;
+                line-height: 30px;
+                padding:10px;
+                // box-sizing: border-box;
+                background-color: rgba(255, 255, 255, 0.65);
+                position: relative;
+                border-radius: 8px;
+                .detail-title-box{
+                   padding-left: 4px;
+                    width: 280px;
+                    // background-color: aqua;
+                    .detail-title-Cn{
+                        font-size: 18px;
+                        color: rgb(64, 187, 181);
+                    }
+                    .detail-title-En{
+                        color: #999;
+                        font-style: italic;
+                        font-family: 'Times New Roman', Times, serif;
+                        padding-left: 4px;
+                    }
+                }
+                .like{
+                    width: 50px;
+                    height: 59.2px;
+                    position: absolute;
+                    right: 10px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    font-size: 24PX;
+                    .van-icon {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &.van-icon-like{
+                            // color: rgba(64, 187, 181,0.7);
+                            color: rgba(241, 28, 53, 0.6);
+                            border: none;
+                        }
+                        &.van-icon-like-o{
+                            color: rgba(64, 187, 181,0.7);
+                        }
+                    }
+                }
+                
+            }
+            .detail-choose{
+                // padding:10px;
+                font-size: 15px;
+                margin-top: 12px;
+                background-color: rgba(255, 255, 255, 0.65);
+                position: relative;
+                border-radius: 8px;
+                padding: 6px 0;
+                .detail-choose-item{
+                    height: 44px;
+                    line-height: 44px;
+                    margin: 2px 0;
+                    .detail-choose-item-title{
+                        float: left;
+                        width: 52px;
+                        height: 44px;
+                        // text-align: center;
+                        margin-right: 10px;
+                        margin-left: 20px;
+                        color: #3f3f3f;
+                    }
+                    .detail-choose-item-tag{
+                        white-space: nowrap;
+                        // text-overflow: ellipsis;
+                        font-size: 14px;
+                        float: left;
+                        width: 66px;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #999;
+                        text-align: center;
+                        background-color: rgba(64, 187, 181,0.1);
+                        border: none;
+                        margin: 9px 8px 0 8px;
+                        border-radius: 8px;
+                        transition: background-color 0.3s,color 0.2s;
+                        &.unactiveTag{
+                            background-color: rgba(64, 187, 181,0.1);
+                            border: none;
+                        }
+                        &.activeTag{
+                            background-color: rgba(64, 187, 181,0.5);
+                            border: 1px solid rgb(64, 187, 181);
+                            color:#fff;
+                        }
+                    }
+                }
+                
+            }
+            .detail-msg{
+                    font-size: 13px;
+                    margin-top: 12px;
+                    background-color: rgba(255, 255, 255, 0.65);
+                    position: relative;
+                    border-radius: 8px;
+                    padding: 16px ;
+                    margin-bottom: 12px;
+                .detail-msg-title {
+                    font-size: 17px;
+                    margin-bottom: 16px;
+                }
+                p{
+                    padding: 0 5px;
+                    color: #999;
+                    line-height: 26px;
+                }
+            }
+            .detail-price-box{
+                height: 20px;
+                border-radius: 8px;
+                padding: 14px 16px ;
+                margin-bottom: 22px;
+                background-color: rgba(255, 255, 255, 0.65);
+                .detail-price{
+                    
+                    float: left;
+                    font-size: 20px;
+                    color: @mainColor;
+    
+                }
+                .van-stepper{
+                    float: right;
+                    .van-stepper__plus{
+                        background-color: rgb(64, 187, 181);
+                    }
+                    .van-stepper__minus{
+                        color: rgb(64, 187, 181);
+                        border: 0.02667rem solid rgb(64, 187, 181);
+                    }
+                }
+            }
+    
+        }  
+    } 
+    .detail-bottom{
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        .van-goods-action{
+            padding: 0 6px;
+            .van-goods-action-icon{
+                width: 50px;
+            }
+        }
+        
+    }
+}

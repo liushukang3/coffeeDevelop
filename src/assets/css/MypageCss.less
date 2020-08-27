@@ -1,0 +1,77 @@
+.Mypage{
+    .mypage-top{
+        position: relative;
+        height: 176px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        .changBg{
+            position: absolute;
+            right: -5px;
+            top: -10px;
+            // top: 50px;
+            
+            .van-uploader__upload{
+                background-color: rgba(192, 190, 190, 0);
+                margin: 0;
+                
+            }
+        }
+
+        .user-box{
+            height: 80px;
+            position: absolute;
+            top: 35%;
+            // transform: translateY(-30%);
+            .headerImg{
+                margin: 0 24px 0 28px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                box-shadow: 0 0 4px 4px rgba(192, 190, 190, 0.4),  0 0 4px 1px rgba(192, 190, 190, 0.8) inset;
+                background-repeat: no-repeat;
+                background-position: center center;
+               
+                background-size: cover;
+            }
+            .right{
+                color: #f7f8fa;
+                font-size: 14px;
+                width: 220px;
+               
+                
+                .user-Nickname{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 46px;
+                }
+                .user-sign{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            &.NotLogin{
+                left: 25%;
+                // transform: translateX(-50%);
+                .fl{
+                    color: #f7f8fa;
+                    font-size: 16px;
+                    line-height: 80px;
+                }
+            }
+        }
+        
+    }
+   
+    .mypage-box{
+        .van-cell{
+            background-color: rgba(255,255,255,0.9);
+            &:active{
+                background-color: rgba(245, 244, 244, 0.9);
+            }
+        }
+    }
+}

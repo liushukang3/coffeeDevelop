@@ -1,0 +1,120 @@
+.Homepage{
+    height: 100%;
+    overflow: hidden;
+    // overflow-y: auto;
+    
+    .banner-box{
+        height: 260px;
+        margin-bottom: 1.5px;
+        img {
+            height: 260px;
+            display: block;
+        }
+
+    }
+    .menu-box{
+        height: calc(~ "100% - 260px");
+        background-color: #fcfcfc;
+        overflow: hidden;
+        display: flex;
+        .left-nav{
+            background-color: #eeeeee55;
+            color: rgb(102, 102, 102);
+            padding-top: 10px;
+            a{
+                border-right: 0 ;
+            }
+            .van-sidebar{
+                width: 90px;
+                .van-sidebar-item{
+                    background-color: #eeeeee55;
+                    border-bottom: 2px solid #fcfcfc;
+                    transition: all 0.3s;
+                    text-align: center;
+                    &:hover{
+                        color:@mainColor
+                    }
+                    
+                }
+                .van-sidebar-item--select{
+                    transition: background-color 0.3s;
+                    background-color: #fcfcfc;
+                    color: @mainColor;
+                    &:before{
+                        background-color: @mainColor;
+                    }
+                    .van-sidebar-item__text{
+                        transition: font-size 0.3s;
+                        font-size: 0.4rem;
+                    }
+                }
+            }
+            
+        }
+        .right-list{
+            // background-color: rosybrown;
+            flex: 1;
+            padding: 10px;
+            padding-top: 15px;
+            overflow-y: auto;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding-bottom: 50px;
+                .list-item-box{
+                    &.last-list-item{
+                        margin-right: auto;
+                        margin-left: 6px;
+                    }
+                    width: 45%;
+                    text-align: center;
+                    border-radius: 8px;
+                    background-color: rgba(255,255,255,0.6);
+                    margin-bottom: 12px;
+                    border: 1px solid #eeeeee;
+                    .img-box {
+                        padding: 12px;
+                        text-align: center;
+                        span{
+                            width: 86px;
+                            height: 86px;
+                            display: block;
+                            margin: 0 auto;
+                            border-radius: 50%;
+                            box-shadow: 0 0 2px 1px rgba(255,255,255,0.5) inset;
+                        }
+                    }
+                    .list-item-titleCn{
+                        font-size: 14px;
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0 15px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        // color: #333;
+                    }
+                    .list-item-titleEn{
+                        line-height: 20px;
+                        padding:0  16px; 
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-style: italic;
+                        font-family: Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei',sans-serif;
+                    }
+                    .list-item-price{
+                        font-size: 18px;
+                        font-weight: 600;
+                        height: 32px;
+                        line-height: 32px;
+                        padding: 8px;
+                        color: @mainColor;
+
+                    }
+                }
+            }
+        }
+    }
+}

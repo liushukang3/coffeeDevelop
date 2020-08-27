@@ -1,0 +1,128 @@
+.Pay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #eeeeee66;
+    .pay-nav{
+        .van-nav-bar{
+            background-color: rgba(255, 255, 255, 0.9);
+            .van-nav-bar__left>*{
+                
+                color: @mainColor;
+            }
+            .van-nav-bar__title{
+                color: #999;
+            }
+
+        }
+    }
+    .paybody{
+        height: calc(~"100% - 97px");
+        // background-color: yellow;
+        padding: 12px;
+        box-sizing: border-box;
+       overflow-y: auto;
+        .chooseAddress{
+            background-color: rgba(255, 255, 255, 0.9);
+            min-height: 44px;
+            line-height: 20px;
+            padding: 10px 15px;
+            position: relative;
+            border-radius: 6px;
+            .chooseAddress-right{
+                font-size: 16px;
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+            }
+            .chooseAddress-text{
+                // background-color: #333333;
+                width: 300px;
+                font-size: 16px;
+                // position: absolute;
+                // top: 50%;
+                // left: 15px;
+                // transform: translateY(-50%);
+                color: #333333;
+                .chooseAddress-text-a{
+                    margin-top: 4px;
+                }
+            }
+        }
+        .pay-list{
+            padding: 16px 0;
+            .order-item{
+                color: #999;
+                border-radius: 6px;
+                background-color: #ffffff;
+                padding:6px 12px 16px 12px;
+                .order-item-start{
+                    height: 24px;
+                    line-height: 24px;
+                    .order-id{
+                        color: #333
+                    }
+                    .order-style{
+                        float: left;
+                        height: 100%;
+                    }
+                    .order-del{
+                        float: left;
+                        margin-left: 16px;
+                        height: 100%;
+                    }
+                }
+                .order-item-body{
+                    margin: 5px 0;
+                    .van-card{
+                        border-bottom: 1px solid #eeeeee;
+                        background-color: #ffffff;
+                        padding: 0.16rem 0;
+                        .van-card__thumb{
+                            margin-right: 16PX;
+                        }
+                        .van-card__title{
+                            font-size: 13PX;
+                        }
+                        .van-card__desc{
+                            color: #999;
+                            padding: 4px 0;
+                            font-style: italic;
+                        }
+                        .product-type{
+                            color: #999;
+                        }
+                        .van-card__price-integer{
+                            font-size: 0.32rem;
+                            margin-left: 2px;
+                        }
+                    }
+                }
+                .order-item-end{
+                    line-height: 16px;
+                    margin-top: 10px;
+                    .total-products{
+                        margin-right: 5px;
+                    }
+                    .total-money{
+                        font-size: 16px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+    .van-submit-bar{
+        background-color: rgba(255, 255, 255, 0.9);
+        .van-submit-bar__price{
+            color:@mainColor
+        }
+        .van-button{
+            background: #27aaa4
+        }
+    }
+}

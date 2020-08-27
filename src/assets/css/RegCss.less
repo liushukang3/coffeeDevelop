@@ -1,0 +1,90 @@
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.Register{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  background-color: @bgColor;
+  .van-nav-bar{
+    height: 50px;
+    
+    .van-nav-bar__text{
+      color: @mainColor;
+    }
+  }
+  .logo_box{
+    height: 250px;
+    overflow: hidden;
+    // line-height: 250px;
+    img{
+      width: 150px;
+      height: 150px;
+      margin: 50px auto;
+    }
+  }
+  .van-form{
+    padding: 0 15px;
+    
+    .form_box{
+      background-color: #ffff;
+      border-radius: 15px;
+      padding-top: 6px;
+      
+      .van-cell{
+          background-color: transparent;
+          line-height:33px;
+          .van-field__left-icon{
+            color: #999;
+            .fa-m{
+              font-size: 18px;
+            }
+          }
+          .code-box{
+            height: 32px;
+            border: 1px solid #ddd;
+          }
+          .van-field__button{
+            width:76px;
+            height: 32px;
+            cursor: pointer;
+            
+            text-align: center;
+            line-height: 32px;
+            
+            padding: 0;
+            
+          }
+          .van-cell__title{
+            padding-left: 2px;
+            span {
+            /* // span为行内元素,没有宽高 */
+            display: inline-block;
+            width: 42px;
+            /* //  两端对齐 */
+            text-align-last: justify;
+            -moz-text-align-last: justify;
+            -ms-text-align-last: justify;
+            
+            }
+          }
+          
+      }
+      .btn_box{
+        // margin-top: 32px;
+        padding: 18px 14px;
+        padding-bottom: 28px;
+        .van-button--info {
+            background-color: @mainColor;
+            border: 0.02667rem solid @mainColor;
+        }
+      }
+    }
+  }
+}

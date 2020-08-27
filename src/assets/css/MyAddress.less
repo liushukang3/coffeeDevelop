@@ -1,0 +1,60 @@
+.MyAddress {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #eeeeee66;
+    .MyAddress-nav{
+        .van-nav-bar{
+            background-color: rgba(255, 255, 255, 0.9);
+            .van-nav-bar__left>*{
+                
+                color: @mainColor;
+            }
+            .van-nav-bar__title{
+                color: #999;
+            }
+
+        }
+    }
+    .van-address-list {
+        // margin-top: 10px;
+        padding: 0 14px;
+        .van-radio-group{
+            padding-top: 14px;
+            padding-bottom: 10px;
+            height: 555px;
+            overflow-y: auto;
+            .van-address-item{
+                padding-top:14.5px;
+                padding-bottom: 14.5px;
+                margin-bottom: 14px;
+                &:last-child{
+                    margin-bottom: 14px;
+                }
+
+                .van-radio__icon--checked  {
+                    .van-icon{
+                        background-color: #1d807b8a;
+                        border-color: #1d807b8a;
+                    }
+                }
+                
+                .van-address-item__tag{
+                    background-color: #1d807b8a;
+                }
+                .van-address-item__address{
+                    line-height: 22px;
+                }
+            }
+            
+        }
+        .van-button--danger {
+            color: #fff;
+            background-color: rgb(64, 187, 181);
+            border: 0.02667rem solid #1d807b8a;
+        }
+    }
+}
